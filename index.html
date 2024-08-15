@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Home page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- nav-bar  -->
+    <section class="hero-section">
+      <nav class="navbar navbar-expand-lg navbar-transparent">
+        <div class="container">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <img src="images/logo.png" class="logo-img" alt="" />
+          <button
+          class="navbar-toggler custom-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+        class="collapse navbar-collapse nav_link"
+        id="navbarSupportedContent"
+        >
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">contact</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+      <div class="logIn-btn">
+        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+        <button  id="login" class="btn btn-outline-light fw-semibold">
+          log in
+        </button>
+        <button id="logout-btn" style="display: none;" class="btn btn-outline-light fw-semibold">log out</button>
+      </div>
+    </div>
+  </nav>
+  <!-- landing page content -->
+  <section class="page-content">
+    <h1>Watches For Lifetime</h1>
+    <p>Fashion.Style.Class</p>
+  </section>
+</section>
+
+<!-- body section -->
+
+<section class="body-content">
+  <div class="side-img">
+    <img src="images/brand.jpg" alt="" />
+  </div>
+  <div class="Right-content">
+    <h2>Wear Your Style</h2>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, ea?
+      Omnis commodi quos consequuntur odio numquam iure possimus, officiis
+      earum unde magni a saepe, veritatis est assumenda, minima modi aut!
+    </p>
+  </div>
+</section>
+
+<!-- Modal Structure -->
+<section class="form-card">
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="signInForm">
+        <h2 class="py-3">Login</h2>
+        <form>
+          <input id="login-email" type="email" placeholder="email Id" required><br>
+          <input id="login-password" type="password" placeholder="Password" required><br>
+          <!-- <span id="forgotPassword">Forgot Password</span> -->
+          <button type="submit" id="loginButton">Login</button>
+          <!-- <div style="display: flex; justify-content:center; width: 100%;">
+          </div> -->
+          <div class="text-container py-3 text-secondary">
+            <p>
+              I have no account!
+              <span id="showSignUpForm" class="switch-button" id="path-sign-up"> Sign Up</span>
+            </p>
+          </div>
+          <!-- <button  type="button"  >Sign Up</button> -->
+        </form>
+      </div>
+      <div id="signUpForm" style="display: none;">
+                <h2 class="py-3">Sign Up</h2>
+                <form id="sign-up-form">
+                  <input type="text" placeholder="Username" required><br>
+                  <input id="email" type="email" placeholder="Email Id" required><br>
+                  <input id="password" type="password" placeholder="Password" required><br>
+                  <button type="submit" id="signUpButton">Sign Up</button>
+                  <!-- <div style="display: flex; justify-content: space-between; width: 100%;"> -->
+                    <div class="text-container py-3 text-secondary">
+                      <p>
+                        I have already have an account! 
+                        <span id="showSignInForm" class="switch-button" >Login</span>
+                      </p>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+        <section class="img-section">
+          <h1 class="d-flex justify-content-center fw-semibold text-white py-5">Our Collections</h1>
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <div class="img-box">
+                  <img src="images/watch1.webp" class="d-block w-25" alt="...">
+                  <div class=" shadowcarousel-caption d-none d-md-block">
+                    <h5 >First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="img-box">
+                  <img src="images/watch2.webp" class="d-block w-25" alt="...">
+                  <div class="shadowcarousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="img-box">
+                  <img src="images/watch5.webp" class="d-block w-25" alt="...">
+                  <div class="shadowscarousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="img-box">
+                  <img src="images/watch6.webp" class="d-block w-25" alt="...">
+                  <div class="shadowscarousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="img-box">
+                  <img src="images/watch8.webp" class="d-block w-25" alt="...">
+                  <div class="shadowscarousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+
+
+
+
+       <!-- footer for mobile -->
+       <section class="for-mobile bg-black text-white py-5">
+        <footer class="container">
+          <div class="row justify-content-start bg-black py-3">
+            <div class="col-lg-2 ">
+              <ul type="none" class="fw-semibold py-1 px-3">
+                <li class="active fw-semibold fs-3 border-bottom pb-2 text-secondary mb-5 px-2 text-center">Questions?
+                  Contact us.
+                </li>
+                <li>FAQ</li>
+                <li>Investor Relations</li>
+                <li>Privacy</li>
+                <li>Speed Test</li>
+                <li>Account</li>
+                <li>Ways to Watch</li>
+                <li>Corporate Information</li>
+                <li>Only on Netflix</li>
+                <li>Media Center</li>
+                <li>Terms of Use</li>
+                <li>Contact Us</li>
+                <li>Legal Notices</li>
+                <select class="form-select w-50 py-2 my-3 shadow-none fw-semibold bg-transparent text-white"
+                  aria-label="Default w-50 select example">
+                  <option selected class="fw-semibold ">Language's</option>
+                  <option value="1" class="fw-semibold text-dark">English</option>
+                  <option value="2" class="fw-semibold text-dark">Spanish</option>
+                  <option value="3" class="fw-semibold text-dark">Chines</option>
+                  <option value="3" class="fw-semibold text-dark">Hindi</option>
+                </select>
+                <li>Netflix Pakistan</li>
+              </ul>
+            </div>
+            <div class="col-lg-2">
+              <div class="container">
+                <p class="">Copyright &#169; 2024 Netflix. All rights reserved.
+                  <a href="https://github.com/mohsin-ali08">MOHSIN ALi</a>
+                </p>
+              </div>
+            </div>
+        </footer>
+      </section>
+    </section>
+
+
+        <!-- footer  -->
+        <section class="bg-black text-white py-3 footer-end">
+          <footer class="container py-5">
+            <hr>
+            <div class="row justify-content-start bg-black py-3">
+              <div class="col-lg-4 ">
+                  <ul type="none"  class="fw-semibold">
+                      <li class="active fw-bold fs-4 border-bottom pb-2 text-secondary mb-3">Questions? Contact us.</li>
+                      <li>FAQ</li>
+                      <li>Investor Relations</li>
+                      <li>Privacy</li>
+                      <li>Speed Test</li>
+                      <select class="form-select w-50 py-2 my-3 shadow-none fw-semibold bg-transparent text-white" aria-label="Default select example">
+                        <option selected class="fw-semibold ">Language's</option>
+                        <option value="1" class="fw-semibold text-dark">English</option>
+                        <option value="2" class="fw-semibold text-dark">Spanish</option>
+                        <option value="3" class="fw-semibold text-dark">Chines</option>
+                        <option value="3" class="fw-semibold text-dark">Hindi</option>
+                      </select>
+                      <li>Netflix Pakistan</li>
+                  </ul>
+              </div>
+              <div class="col-lg-2 my-3">
+                  <ul type="none" class="py-5 fw-semibold">
+                      <li>Help Center</li>
+                      <li>Jobs</li>
+                      <li>Cookie Preferences</li>
+                      <li>Legal Notices</li>
+                  </ul>
+              </div>
+             
+              <div class="col-lg-2 my-3">
+                  <ul type="none" class="py-5 fw-semibold">
+                      <li>Account</li>
+                      <li>Ways to Watch</li>
+                      <li>Corporate Information</li>
+                  </ul>
+              </div>
+             
+              <div class="col-lg-2 my-3">
+                  <ul type="none" class="py-5 fw-semibold">
+                      <li>Media Center</li>
+                      <li>Terms of Use</li>
+                      <li>Contact Us</li>
+                      <li>Legal Notices</li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+          </footer>
+        </section>
+      </section>
+        
+          
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="./Auth/signIn/signIn.js" type="module"></script>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

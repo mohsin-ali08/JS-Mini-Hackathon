@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+
+:root {
+    --Roboto-font: "Roboto", "sans-serif";
+    --poesten-font: "Poetsen One", sans-serif;
+    /* --greyish-color: #656565; */
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-origin: padding-box;
+    background-clip: border-box;
+}
+
+#log-in-form {
+    height: 400px;
+    display: flex;
+}
+.form-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 5px 15px rgba(247, 247, 247, 0.553);
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 450px;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.form {
+    width: 50%;
+    height: 100%;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fbfbfb;
+    gap: 20px;
+    font-family: var(--Roboto-font);
+}
+.form-head {
+    font-family: var(--Roboto-font);
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--greyish-color);
+}
+
+.form>label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+
+}
+.form>label>input {
+    color: #fbfbfb;
+    background: transparent;
+    width: 350px;
+    height: 35px;
+    padding: 0px 10px;
+    font-size: 15px;
+    color: var(--greyish-color);
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fbfbfb;
+}
+
+::placeholder {
+    color: rgba(220, 220, 220, 0.447);
+    /* Change to your desired color */
+}
+
+.form>label>input:hover {
+    border: 1px solid gainsboro;
+    border-radius: 6px;
+}
+
+.form>label>input:focus {
+    border: 1px solid gainsboro;
+    border-radius: 6px;
+    background: transparent;
+}
+
+.form>label>p {
+    margin: 0%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fbfbfb;
+}
+.form>.submit-btn {
+    cursor: pointer;
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: gray;
+    color: #fbfbfb;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+    padding: 7px;
+    box-sizing: content-box;
+}
+
+.form>.submit-btn:hover {
+    border: 1px solid gainsboro;
+    backdrop-filter: blur(10px);
+    background: transparent;
+    color: #EFE00F;
+    border-radius: 6px;
+}
+
+
+.text-container>h5 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0%;
+}
+.text-container>p {
+    font-size: 18px;
+    text-align: center;
+    margin: 0%;
+    line-height: 25px;
+}
+
+.text-container {
+
+    font-size: 14px;
+    width: 250px;
+    margin: 5px;
+
+}
+.text-container>p {
+    font-size: 18px;
+    text-align: center;
+    margin: 0%;
+    line-height: 25px;
+}
+
+.text-container {
+
+    font-size: 14px;
+    width: 250px;
+    margin: 5px;
+
+}

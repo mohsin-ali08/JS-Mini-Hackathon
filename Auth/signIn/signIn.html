@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signIn.css">
+    <title>SignIn form</title>
+  </head>
+  <body>
+         <!-- Log-in-form  -->
+    <div class="form-container" id="log-in-form">
+      <form class="form" onsubmit="catchLogValues()">
+        <p class="form-head">Log In</p>
+        <label for="log-in-email">
+          <p>Email :</p>
+          <input
+            type="email"
+            name="log-in-email"
+            id="log-in-email"
+            placeholder="Enter your email"
+            required
+          />
+        </label>
+        <label for="log-in-password">
+          <p>Password :</p>
+          <input
+            type="password"
+            name="log-in-password"
+            id="log-in-password"
+            placeholder="Enter your password "
+            required
+          />
+        </label>
+        <button type="submit"  class="submit-btn" id="login-btn" >Log In</button>
+       
+
+
+        <div class="text-container">
+          <p>
+            I have no account!
+            <span onclick="showSignUp()" id="path-sign-up"> Sign Up</span>
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <script src="../../utils/firebase.js" type="module"></script>
+    <script src="signIn.js" type="module"></script>
+  </body>
+</html>

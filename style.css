@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+
+:root {
+    --Roboto-font: "Roboto", "sans-serif";
+    --poesten-font: "Poetsen One", sans-serif;
+}
+body{
+    background: #000 !important;
+    color: #fff;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.3)
+    ), url(images/background.jpg);
+    /* background-image: url(images/backgroundimg.jpg); */
+    background-size: cover; 
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; 
+}
+
+.navbar-nav .nav-link  {
+    color: #fff; /* Bootstrap dark color */
+    
+   
+    
+}
+.navbar-transparent {
+    background-color: transparent !important;
+}
+.navbar-nav .nav-link:hover {
+    color: #aaa; /* Change this to your desired hover color */
+    border-bottom: 1px solid #aaa ;
+}
+.nav_link {
+    justify-content: center;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.logo-img {
+    width: 55px;
+}
+
+
+
+/* landing page content */
+
+.page-content{
+    width: 100%;
+    height: 85vh;
+    font-family: var(--Roboto-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  
+
+}
+.page-content h1 {
+    color: #fff;
+    font-size: 5rem;
+    background: rgba(0, 0, 0, 0.2); /* Semi-transparent background */
+    backdrop-filter: blur(3px); /* Apply blur effect */
+    border-radius: 8px;
+    border-bottom: 1px solid #aaa;
+    transition: 0.9s ease;
+    
+}
+.page-content h1:hover{
+    transform: scale(1.1); /* Zoom in by 10% */
+}
+.page-content p {
+    color: #aaa;
+    font-size: 2rem;
+    font-family: var(--Roboto-font);
+    letter-spacing: 2px;
+    background: rgba(0, 0, 0, 0.2); /* Semi-transparent background */
+    backdrop-filter: blur(3px); /* Apply blur effect */
+    border-radius: 8px;
+    border-bottom: 1px solid #aaa;
+    transition: 0.9s ease;
+    
+}
+.page-content p:hover {
+    transform: scale(1.1);
+}
+
+
+/* body section  */
+.body-content{
+    width: 100%;
+    height: 80vh;
+    font-family: var(--Roboto-font);
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    border-top: 2px solid gray;
+   
+}
+.Right-content{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   font-family: var(--Roboto-font);
+  
+}
+.Right-content h2{
+    color: aliceblue;
+    font-size: 3rem ;
+}
+.Right-content p {
+    color: #aaa;
+    font-size: 18px;
+    line-height: 29px;
+
+}
+
+.side-img img {
+    width: 430px;
+}
+
+
+
+/* Modal Styles */
+.form-card {
+}
+.modal {
+     display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+.modal-content {
+    /* background-color: white; */
+    padding: 20px;
+    color: #fff !important;
+    border: 1px solid #888 !important;
+    border-radius: 10px;
+    width: 400px !important;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    text-align: center;
+    background: transparent !important;
+    backdrop-filter: blur(9px);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(227, 4, 4);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--Roboto-font);
+}
+
+form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-family: var(--Roboto-font);
+}
+
+form button {
+    padding: 10px;
+    width: 30%;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    font-family: var(--Roboto-font);
+}
+
+
+form button#loginButton {
+    background-color: #007bff;
+}
+
+form button#signUpButton {
+    background-color: #ff00ff;
+}
+
+form button:hover {
+    opacity: 0.8;
+}
+
+/* Button for switching forms */
+.switch-button {
+    background: none;
+    border: none;
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.switch-button:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+.for-mobile {
+    display: none;
+}
+
+
+
+/* starting creat images gallry  */
+.img-section{
+    width: 100%;
+    height: 90vh;
+ 
+}
+.carousel-item {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+}
+.carousel-item img {
+    width: 100%;
+    height: auto ;
+    object-fit: cover; /* Ensures consistent display */
+}
+.img-box{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: #fff;
+}
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+
+
+/* Responsive adjustments */
+
+@media screen and (max-width: 480px) {
+    .carousel-item {
+        min-width: 150px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .logIn-btn{
+        display: none;
+    }
+    .hero-section{
+        width: 100%;
+        height: 100vh;
+        background-image: url(images/watch.gif);
+      
+    }
+    .page-content {
+       width: 100%;
+       height: 30vh;
+
+    }
+    .page-content h1 {
+        font-size: 2rem;
+
+    }
+    .page-content p{
+        font-size: 1rem;
+        color: aliceblue
+    }
+    .body-content {
+        width: 100%;
+        flex-direction: column;    
+    }
+    .side-img img{
+        width:350px
+    }
+    .Right-content {
+        width: 80%
+    }
+    .for-mobile {
+        display: block;
+    }
+    .footer-end{
+        display: none;
+    }
+
+    /* galarry */
+    /* .carousel-item {
+        min-width: 200px;
+    } */
+    .img-section{
+        width: 100%;
+        height: 80vh;
+     
+    }
+     .carousel-item img {
+        width: 300px !important;
+        height: 400px ;
+        object-fit: cover; /* Ensures consistent display */
+    }
+   
+
+  };
